@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+.search-block {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.search {
+    height: 45px;
+    padding: 15px;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.search.btn-primary:hover,
+.search.btn-primary:focus,
+.search.btn-primary:active {
+    outline: none;
+}
+.table-header {
+    cursor: pointer
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 80px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.add-item {
+    margin-bottom: 20px;
+}
+
+.table-col {
+    font-size: 14px;
+    width: 100%;
+    background: white;
+    text-align: left;
+    border-collapse: collapse;
+    color: #3E4347;
+    box-shadow: 0 3px 10px -2px rgba(12,29,47,.27);
+}
+
+.table-col.table-bordered {
+    border: none;
+}
+
+.table-col tr th:first-child,
+.table-col tr td:first-child {
+    text-align: left;
+}
+
+.table-col td,
+.table-col th {
+    text-align: center;
+}
+
+.table-col.table-bordered>tbody>tr>td,
+.table-col.table-bordered>tbody>tr>th,
+.table-col.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th {
+    border: none;
+}
+
+.table-col th:first-child, .table-col td:first-child {
+    border-left: none;
+}
+
+.table-col.table-condensed>thead>tr>th {
+    padding: 25px 20px;
+    font-size: 18px;
+}
+
+.table-col.table-condensed>tbody>tr>td {
+    padding: 20px;
+}
+
+
+
+
+

@@ -1,0 +1,133 @@
+/* App page's styles*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+body {
+    background: #eee;
+    font-size: 16px;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.indent {
+    margin-top: 200px;
+}
+
+.img-box .list-group {
+    padding-top: 100px;
+}
+
+.list-group-item {
+    border: none;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500 !important;
+    padding-left: 40px;
+    background: white;
+    margin-bottom: 7px;
+    box-shadow: 0 3px 10px -2px rgba(12,29,47,.27);
+    overflow: hidden;
+}
+
+.list-group-item:before {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid #777;
+    border-right: 3px solid #777;
+    border-radius: 1px;
+    top: 50%;
+    left: 10px;
+    transform: rotate(45deg) translateY(-50%);
+    transition: width .3s ease-in-out;
+}
+
+.list-group-item a {
+    color: #555;
+}
+
+
+.list-group-item:hover:before {
+    display: block;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+
+.list-group-item:hover:after,
+.list-group-item:focus:after {
+    width: 100%;
+}
+
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+    background: none !important;
+}
+
+.list-block {
+    background: transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    border: none;
+    padding: 0 10px;
+}
+
+
+
+.label-group {
+    width: 16%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 0;
+    padding-right: 15px;
+    font-weight: 500;
+    text-align: left;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+    .form-horizontal .control-label.label-group {
+        text-align: left;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .form-horizontal .control-label.label-group {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+.text-area.form-control,
+ select.form-control {
+    width: 84%;
+    display: inline-block;
+}
+
+@media (max-width: 1400px) {
+    .text-area.form-control,
+    select.form-control {
+        display: block;
+        width: 100%;
+    }
+}
+
+.button-box {
+    text-align: right;
+}
+
+.button-box .btn {
+     padding-right: 25px;
+     padding-left: 25px;
+     text-transform: uppercase;
+ }
+
+.button-box .btn:hover,
+.button-box .btn:active,
+.button-box .btn:focus {
+    outline: none;
+}
